@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
+    <title>Huasi - Staff</title>
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+    <link rel="stylesheet" href="../css/staff.css">
+    <script>
+        function checker(){
+            var result = confirm('¿Estás seguro de salir?');
+            if(result==false){
+                event.preventDefault();
+            }
+        }
+    </script>
+</head>
+<body>
+    
+    <input type="checkbox" id="nav-toggle">
+    <div class="sidebar">
+        <div class="sidebar-brand">
+            <h2><span class=""><img src="../img/new_logo_white_min.png" width="40px" height="40px"></span> <span>Huasi</span></h2>
+        </div>
+
+        <div class="sidebar-menu">
+            <ul>
+                <li >
+                    <a href="../admin pages/a-dashboard.html"><span class="las la-igloo"></span>
+                    <span>Dashboard</span></a>
+                </li>
+                <li>
+                    <a href="../admin pages/a-clientes.html"><span class="las la-users"></span>
+                    <span>Clientes</span></a>
+                </li>
+                <li>
+                    <a href="../admin pages/a-pedidos.html"><span class="las la-shopping-bag"></span>
+                    <span>Pedidos</span></a>
+                </li>
+                <li>
+                    <a href="../admin pages/a-staff.html" class="active"><span class="las la-user-circle"></span>
+                    <span>Staff</span></a>
+                </li>
+                <li>
+                    <a onClick="checker()" href="../pages/index.html"><span class="las la-sign-out-alt"></span>
+                    <span>Salir</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <header>
+            <h2>
+                <label for="nav-toggle">
+                    <span class="las la-bars"></span>
+                </label>
+                Staff
+            </h2>
+
+            <div class="search-wrapper">
+                <span class="las la-search"></span>
+                <input type="search" placeholder="Search Here " />
+            </div>
+
+            <div class="user-wrapper">
+                <img src="../img/sam.jpg" width="40px" height="40px">
+                <div>
+                    <h4>Samir Barreto</h4>
+                    <small>Ing. Sistemas</small>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <div class="dashboard cards">
+
+                <div class="card-single">                        
+                    <div>
+                         <h1>Samir Barreto</h1>
+                        <span>Ingeniero de Sistemas e Informática</span>
+                    </div>
+                    <div>
+                        <span><img src="../img/sam.jpg" width="100px" height="100px" alt=""></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                   <div>
+                        <h1>Joseph Cavero</h1>                            
+                        <span>Ingeniero de Sistemas e Informática</span>
+                        </div>
+                     <div>
+                          <span><img src="../img/joseph.jpg" width="100px" height="100px" alt=""></span>
+                   </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1>Juan De La Portilla</h1>
+                        <span>Ingeniero de Software</span>
+                    </div>
+                    <div>
+                        <span><img src="../img/juan.jpg" width="100px" height="100px" alt=""></span>
+                    </div>
+                </div>
+                
+                <div class="card-single">
+                    <div>
+                        <h1>Seiyi Suehiro</h1>
+                        <span>Ingeniero de Sistemas e Informática</span>
+                    </div>
+                    <div>
+                        <span><img src="../img/seiyi.jpg" width="100px" height="100px" alt=""></span>
+                    </div>
+                </div>
+
+                <div class="card-single">
+                    <div>
+                        <h1>Gianpierre Vargas</h1>
+                        <span>Ingeniero de Software</span>
+                    </div>
+                    <div>
+                        <span><img src="../img/gian.jpg" width="100px" height="100px" alt=""></span>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

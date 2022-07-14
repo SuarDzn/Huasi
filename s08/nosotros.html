@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COVID-19&reg; VARIANTE DELTA</title>
+    <!-- Agregar Css -->
+    <link rel="stylesheet" href="./css/main.css">
+    <!-- Agregar js: embebido -->
+    <script type="text/javascript" >
+        function saludo(){
+            alert("Welcome to class");
+        }
+    </script>
+    <!-- Agregar js: externa -->
+    <script src="./js/main.js">
+    </script>
+
+</head>
+<body>
+    <header>
+        <h1>QuinLab&copy;</h1>
+    </header>
+    <nav>
+        <a href="index.html">Inicio</a> &nbsp;
+        <a href="nosotros.html">Nosotros</a> &nbsp;
+        <a href="productos.html">Productos</a> &nbsp;
+        <a href="contacto.html">Contacto</a> &nbsp;
+        <a href="login.html">Intranet</a>
+    </nav>
+    <br><br>
+
+    <!-- AGREGAR CONTENEDORES -->
+    <div class="fila">
+        <div class="col-10 col-m-8 col-s-6" style="background-color:pink;"> <!-- 10 columnas -->
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea.</p>
+            <button type="button" onclick="saludo()">Saludar</button>
+            <button type="button" onclick="despedir()">Despedir</button>
+            <button type="button" onlick="alert('En directo')">Directo</button>
+
+        </div>
+        <div class="col-2 col-m-4 col-s-6" style="background-color:rgb(255, 241, 241);"> <!-- 2 columnas -->
+            <img src="./img/salud1.jpg" alt="cerebro">
+        </div>
+    </div>
+    <div class="fila" >
+        <div class="col-4 col-m-4 col-s-12" style="background-color: yellow;"> <!-- 4 columnas -->
+            Hello
+        </div>
+        <div class="col-4 col-m-4 col-s-12" style="background-color: crimson;"> <!-- 4 columnas -->
+            Good Bye
+        </div>
+        <div class="col-4 col-m-4 col-s-12" style="background-color: grey;">
+            Nice to meet you
+        </div>
+        <div class="col-12 col-m-12 col-s-12" style="background-color:orange;">
+            <p>Lorem ipsum dolor sit amet consectetur.</p>
+            <!-- Operaciones básicas: aritméticas -->
+            <h3>Operaciones</h3>
+            <label for="">Ingrese un número:</label>
+            <input type="number" name="" id="num1"> <br><br>
+            <label for="">Ingrese un número:</label>
+            <input type="number" name="" id="num2"> <br><br>
+
+            <button type="button" onclick="suma(
+                document.getElementById('num1').value,
+                document.getElementById('num2').value);" >
+                
+                Sumar</button>
+            <button type="button"onclick="resta(
+                document.getElementById('num1').value,
+                document.getElementById('num2').value);" >
+                                Restar</button>
+
+            <button type="button" onclick="multiplica(
+                document.getElementById('num1').value,
+                document.getElementById('num2').value);" >
+                Multiplicar</button>
+
+            <p>Resultado: <span id="resultado"> </span></p>
+
+
+        </div>
+
+    </div>
+        
+    <!-- Pie de página -->
+    <footer>
+        <table>
+            <tr>
+                <td>QuinLab&copy;</td>
+                <td>Dirección: Calle S/N 246. <br> Celular: 951254786</td>
+            </tr>
+        </table>
+    </footer>
+</body>
+</html>

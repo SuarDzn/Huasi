@@ -1,0 +1,66 @@
+*{
+    font-family: inherit;
+}
+ /**************Menú ***************/
+a{
+    /* border: 2px solid blue; */
+    background-color: moccasin;
+    color: crimson;
+    border-radius: 10px;
+    padding:5px 10px;
+    text-decoration: none;
+}
+a:hover{
+    background-color: crimson;
+    color:moccasin;
+    padding: 6px 20px;
+    transition-duration: 1000ms;
+}
+/*********** Encabezado ***************/
+.titulo{
+    background-color: crimson;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    /*1rem = 16px
+    2rem= 32px 
+    rem = root del html 
+    em = contenedor padre */
+}
+
+/* ************Formulario **************/
+form{
+    width: 80%;
+    margin: 0 auto; /* centrar el formulario */
+    max-width: 600px;
+}
+fieldset{
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: crimson;
+    padding: 25px;
+}
+legend{
+    /* border: 2px solid red; */ /* color y grosor de borde  */
+    background-color: moccasin; /* color de fondo */
+    padding: 10px 20px; /* espacio de relleno */
+    border-radius: 10px; /* bordes redondeado */
+    font-weight: bold; /* negrita */
+    /* text-align: center; */ /* centrar texto */
+    margin:  0 auto; 
+}
+
+/* Selector de atributo */
+input[type=text], input[type=email], input[type=number]{
+    width: 95%;
+    background-color: moccasin;
+}
+
+label{
+    font-weight: bold;
+}
+
+/* Selector id */
+#texto{
+    resize: none;
+}

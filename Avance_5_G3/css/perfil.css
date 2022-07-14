@@ -1,0 +1,38 @@
+.card {
+    padding: 2rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    background: white;
+    max-width: 300px;
+    margin: auto;
+    text-align: center;
+    font-family: arial;
+  }
+  
+.title {
+    color: #050924;
+    font-size: 18px;
+  }
+  
+i{
+    color: #050924;
+}
+
+h1,p{
+    color: #050924;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: #050924;
+  }
+
+.hero-btn{
+    background: #050924;
+    color:white
+}
+  
+.hero-btn:hover, a:hover {
+    opacity: 2;
+    color: white;
+  }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Huasi - Registro</title>
+    <link rel="stylesheet" href="../css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Italiana&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/69e84cf231.js" crossorigin="anonymous"></script>
+</head>
+
+<body bgcolor="#050924">
+    <section class="sub-header h-login">
+
+        <nav>
+            <a href="../pages/index.html"><img src="../img/new_logo_white_min.png"></a>
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hideMenu()"></i>
+                <ul>
+                    <li><a href="../pages/index.html">Inicio</a></li>
+                    <li><a href="../pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="../pages/carta.html"> Nuestra Carta</a></li>
+                    <li><a href="../pages/integrantes.html">Nuestro Equipo</a></li>
+                    <li><a href="../pages/login.html">Ingresa o Registrate</a></li>
+                </ul>
+            </div>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
+        </nav>
+    </section>
+
+    <!-- Login Contenido -->
+    
+    <section class="login">
+
+        <div class="row">
+                <form class="login">
+                    <h3>¡Bienvenido!</h3>
+                    <p>Configuremos tu cuenta personal</p>
+                    <p>¿Ya tienes una cuenta?  &nbsp;<a href="../pages/login.html">Ingresa Sesión</a></p>
+                    <input type="text" class="login-input" placeholder="Nombre*" required/>
+                    <input type="text" class="login-input" placeholder="Apellido*" required/>
+                    <input type="email" class="login-input" placeholder="Correo Electrónico*" required/>
+                    <input type="number" class="login-input" placeholder="Celular*" min="9" max="9" required/>
+                    <input type="password" class="login-input" placeholder="Contraseña*" required/>
+                    <input type="submit" value="Crear Cuenta" class="hero-btn white-btn"/>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+
+    <section class="footer">
+        <div class="head-section">
+            <h3>Contáctanos</h3>
+            <p>
+                <i class="fa-solid fa-phone"></i>&nbsp;934-734-454 <br>
+                <i class="fa-solid fa-phone"></i>&nbsp;923-435-322
+            </p>
+        </div><br>
+        <div class="footer-content">
+            <div class="section">
+                <h4><a href=https://chats.landbot.io/v3/H-1251777-9TFXQOJLYPZO1D4X/index.html target="_blank"
+                        rel="noopener noreferrer">Horarios y más información</a></h4>
+                <h4><a href=https://chats.landbot.io/v3/H-1251777-9TFXQOJLYPZO1D4X/index.html target="_blank"
+                        rel="noopener noreferrer">Haz una reserva</a></h4><br>
+            </div>
+            <div class="section">
+                <h4><a href=#>Libro de Reclamaciones</a></h4>
+                <h4><a href=#>Política de Cookies</a></h4><br>
+            </div>
+        </div><br>
+        <div class="head-section">
+            <small>&copy; 2022 Página desarrollada por el grupo 3</small>
+        </div>
+    </section>
+
+    <!-- JavaScript para el Menu -->
+
+    <script>
+
+        var navLinks = document.getElementById("navLinks")
+
+        function showMenu() {
+            navLinks.style.right = "0";
+        }
+
+        function hideMenu() {
+            navLinks.style.right = "-200px";
+        }
+
+    </script>
+</body>
+
+
+</html>
